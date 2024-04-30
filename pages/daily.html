@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <title>Daily Forecast</title>
+</head>
+<body>
+    <h1>Daily Weather</h1>
+    <div class="container">
+        <form action="get-daily-forecast">
+            <div>
+                <label for="city" class="label">Enter city:</label><br>
+                <input type="text" id="city" name="city" class="input"> 
+            </div>
+            <div>
+                <label for="postcode" class="label">Enter Postcode:</label><br>
+                <input type="text" id="postcode" name="postcode" class="input">
+            </div>
+            <div class="temp-units">
+                <label for="temp-units" class="label">Units For Temperature: </label><br>
+                <select name="temp-units" id="temp-units" class="input">
+                    <option value="metric">Celsius</option>
+                    <option value="imperial">Fahrenheit</option>
+                </select>
+            </div>
+                <button type="submit" class="get-forecast-button">Get Forecast</button>
+        </form>
+    </div>
+</body>
+</html>
