@@ -11,7 +11,7 @@
     <div class="container">
         <form action="get-daily-forecast">
             <div>
-                <label for="city" class="label">Enter city:</label><br>
+                <label for="city" class="label">Enter City:</label><br>
                 <input type="text" id="city" name="city" class="input"> 
             </div>
             <div>
@@ -27,6 +27,314 @@
             </div>
                 <button type="submit" class="get-forecast-button">Get Forecast</button>
         </form>
+    </div>
+
+    <div id="weather">
+        <p>Weather in <span id="city">____</span> for the next 5 days</p>
+        <div id="daily-weather">
+            <h2>Tomorrow</h2>
+            <div class="day">
+                <div class="3hr">
+                    <h6>12am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="3hr">
+                    <h6>3am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>12pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>3pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+            </div>
+            <h2>In 2 Days</h2>
+            <div class="day">
+                <div class="3hr">
+                    <h6>12am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="3hr">
+                    <h6>3am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>12pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>3pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+            </div><h2>In 3 Days</h2>
+            <div class="day">
+                <div class="3hr">
+                    <h6>12am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="3hr">
+                    <h6>3am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>12pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>3pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+            </div><h2>In 4 Days</h2>
+            <div class="day">
+                <div class="3hr">
+                    <h6>12am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="3hr">
+                    <h6>3am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>12pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>3pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+            </div><h2>In 5 Days</h2>
+            <div class="day">
+                <div class="3hr">
+                    <h6>12am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+                <div class="3hr">
+                    <h6>3am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9am</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>12pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>3pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>6pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div><div class="3hr">
+                    <h6>9pm</h6>
+                    <img src="../images/placeholder.png" alt="{condition}">
+                    <p><span id="condition">{Condition}</span></p>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

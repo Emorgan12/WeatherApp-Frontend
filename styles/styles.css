@@ -91,3 +91,27 @@ button{
 #weather p{
     margin-bottom: 20px;
 }
+
+#daily-weather h2{
+    margin: 0 10px;
+}
+
+h6{
+    margin: 5px 0;
+}
+
+.day{
+    border: 2px solid rgb(1, 126, 84);
+    padding: 10px;
+    margin: 0 10px ;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.day p{
+    font-size: 1vw;
+    color: rgb(1, 126, 84);
+}
