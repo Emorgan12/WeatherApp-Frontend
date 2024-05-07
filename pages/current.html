@@ -19,6 +19,9 @@
                 <label for="postcode" class="label">Enter Postcode:</label><br>
                 <input type="text" id="postcode" name="postcode" class="input">
             </div>
+            <div style="margin-bottom: 1rem;">
+                <p>Note: Only postcode or city is required. Do not enter both.</p>
+            </div>
             <div class="temp-units">
                 <label for="temp-units" class="label">Units For Temperature: </label><br>
                 <select name="temp-units" id="temp-units" class="input">
@@ -26,16 +29,9 @@
                     <option value="imperial">Fahrenheit</option>
                 </select>
             </div>
-                <button type="submit" class="get-forecast-button">Get Forecast</button>
+                <button type="submit" class="get-forecast-button"><a href="current-result.html">Get Forecast</a></button>
         </form>
     </div>
 
-    <div id="weather">
-        <p>Weather in <span id="city">____</span> right now</p>
-        <img src="../images/placeholder.png" alt="">
-        <p><span id="condition">{Condition}</span></p>
-        <p>Temperature: <span id="temperature"></span></p>
-        <p>Feels like: <span id="feels-like"></span></p>
-        <p>Wind Speed: <span id="wind-speed"></span></p>
 </body>
 </html>
